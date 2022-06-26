@@ -6,7 +6,7 @@ $connect = dbconnect();
 $searchString = $_GET['search_string'];
 
 
-$sql = "SELECT * FROM buildings WHERE building_name LIKE '%$roomName%'";
+$sql = "SELECT * FROM buildings WHERE building_name LIKE '%$searchString%'";
 $result = mysqli_query($connect,$sql);
 
 $data = array();
