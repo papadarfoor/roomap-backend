@@ -13,7 +13,7 @@ $data = array();
 
 while($row = $result->fetch_assoc()){
 
-    $data[] = json_decode($row);
+    $data[] = $row;
 
 }
 
