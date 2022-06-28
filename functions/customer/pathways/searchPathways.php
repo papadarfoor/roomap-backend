@@ -4,7 +4,7 @@ require '../../../database/mydbcon.php';
 $connect = dbconnect();
 
 $searchString = $_GET['search_string'];
-$romId = $_GET['room_id'];
+$roomId = $_GET['room_id'];
 
 
 $sql = "SELECT * FROM pathways WHERE room_id = $roomId AND pathways LIKE '%$searchString%'";
