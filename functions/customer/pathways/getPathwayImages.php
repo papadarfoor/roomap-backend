@@ -12,10 +12,10 @@ $result = mysqli_query($connect,$sql);
 
 while($row = $result->fetch_assoc()){
 
-    $data = json_decode($row['pathway_images']);
+    $data = json_decode($row['pathways']);
 
 }
 
-echo json_encode($data->room->pathway_direction);
+echo json_encode($data->room->path_images);
 
 ?>
